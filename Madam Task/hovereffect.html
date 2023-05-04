@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HoverEffect</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            display: inline-block;
+            text-decoration: none;
+            padding: 20px 40px;
+            font-size: 30px;
+            color: aqua;
+            font-family: monospace;
+        }
+        li{
+            list-style:none;
+            display: inline-block;
+        }
+        ul{
+            background: lightslategray;
+            list-style: none;
+        }
+        ul li{
+            display: inline-block;
+        }
+        ul li .nav-link{
+            display: inline-block;
+            padding: 20px 30px;
+            font-weight: bolder;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            position: relative;
+        }
+        .nav-link:hover{
+            background-color: black;
+            color: cyan;
+        }
+        #link{
+            position: absolute;
+            box-shadow: 2px 2px 2px #abc, -2px 2px 2px #abc;
+            display: none;
+        }
+        #link a{
+            display: block;
+            text-decoration: none;
+            padding: 2px 30px;
+            color: cadetblue;
+            font-weight: bolder;
+        }
+        #dropdown:hover #link{
+            display: block;
+        }
+        #link a:hover{
+            background-color:lightpink;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <a href="#" class="nav-link">Home</a>
+            </li>
+            <li id="dropdown">
+                <a href="#" class="nav-link">About</a>
+                <div id="link">
+                    <a href="#">Link 1</a>
+                    <a href="#">link 1</a>
+                    <a href="#">Link 1</a>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="nav-link">Contact</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">Product</a>
+            </li>
+            <li>
+                <a href="#" class="nav-link">Service</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

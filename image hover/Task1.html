@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .perent{
+            height: 680px;
+            width: 580px;
+            margin: auto;
+            position: relative;
+            /* overflow: hidden; */
+        }
+        img{
+            height:540px;
+            width: 740px;
+            position: absolute;
+            left: -40px;
+            transition: 0.9s;
+        }
+        .perent:hover img{
+            top: 0;
+            left: 0;
+        }
+        i{
+            height: 680px;
+            width: 580px;
+            position: absolute;
+            background-color: rgba(6, 6, 6);
+            transition: 2s;
+        }
+        .i1{
+            top: 100%;
+            right: 100%;
+        }
+        .i2{
+            bottom: 100%;
+            left: 100%;
+        }
+        .perent:hover .i{
+            top: 0%;
+            left: 0%;
+            right: 0%;
+            bottom: 0%;
+        } 
+    </style>
+</head>
+<body>
+    <div class="perent">
+        <img src="/image/urus.jpg.jpg" alt="">
+        <div class="i i1"></div>
+        <div class="i i2"></div>
+    </div>
+</body>
+</html>

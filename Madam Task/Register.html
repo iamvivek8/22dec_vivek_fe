@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="slide1.css">
+    <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#slide').cycle('zoom, fade');
+        })
+    </script>
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <div id="title">
+                <h1>Online Exam</h1>
+            </div>
+            <div id="nav">
+                <ul>
+                    <li><a href="slide.html" class="active">Home</a></li>
+                    <li><a href="Register.html">Register</a></li>
+                    <li><a href="#">Quiz</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="#">Log-out</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <contant>
+        <div id="img">
+            <img src="/field-minion-.webp" alt="">
+            <img src="/minion-as-john-wick-.webp" alt="">
+            <img src="/minions.jpg" alt="">
+        </div>
+        <div id="form">
+            <form action="#">
+                <h1>Registration Form</h1>
+                <input type="text" placeholder="Full Name" required>
+                <input type="text" placeholder="User Name" required>
+                <input type="text" placeholder="Email" required>
+                <label for="GEnder"></label>
+                <input type="radio" name="gender" value="male">male
+                <input type="radio" name="gender" value="female">female
+                <input type="text" placeholder="city" required>
+                <input type="text" placeholder="Zip_Code" maxlength="6" required>
+                <input type="password" placeholder="password" required>
+                <button type="submit" value="login">Register</button>
+                <p>Create new account? <a href="slide.html">Login Here</a></p>
+            </form>
+        </div>
+    </contant>
+</body>
+</html>

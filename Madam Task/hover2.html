@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            display: inline-block;
+            color: cadetblue;
+            padding: 20px 40px;
+            font-family: arial;
+            font-size: 30px;
+        }
+        li{
+            display: inline-block;
+            display: inline-block;
+            
+        }
+        ul{
+            background: lightseagreen;
+            list-style: none;
+        }
+        ul li{
+            display: inline-block;
+        }
+        ul li .v1{
+            display: inline-block;
+            padding: 20px 30px;
+            font-weight: bolder;
+            position: relative;
+            text-decoration: none;
+            color: whitesmoke;
+        }
+        .v1:hover{
+            color:darkcyan;
+            background-color:lightsalmon;
+        }
+        #pro{
+            display: none;
+            position: absolute;
+            box-shadow: 2px 2px 2px #abc, -2px 2px 2px #abc;
+            border-radius: 12px;
+        }
+        #pro a{
+            display: block;
+            font-weight:lighter;
+            color: darkolivegreen;
+            text-decoration:none;
+            padding: 2px 30px;
+            border-radius: 12px;
+        }
+        #pro a:hover{
+            color:darkslategray;
+            background-color:lightsteelblue;
+
+        }
+        #dropdown:hover #pro{
+            display: block;
+        }
+       
+       
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <a href="#" class="v1">Home</a>
+            </li>
+            <li>
+                <a href="#" class="v1">About</a>
+            </li>
+                <li id="dropdown">
+                <a href="#" class="v1">Product</a>
+                <div id="pro">
+                    <a href="#">Mobile</a>
+                    <a href="#">Laptop</a>
+                    <a href="#">Charger</a>
+                    <a href="#">TV</a>
+                </div>
+            </li>
+            <li>
+                <a href="#" class="v1">Contact</a>
+            </li>
+            <li>
+                <a href="#" class="v1">Service</a>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
