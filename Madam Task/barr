@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barr</title>
+    <link rel="stylesheet" href="bar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="nav">
+        <span class="fa-solid fa-bars">
+            <ul>
+                <li class="list">1</li>
+                <li class="list">2</li>
+                <li class="list">3</li>
+                <li class="list">4</li>
+                <li class="list">5</li>
+                <li class="list">6</li>
+            </ul>
+        </span>
+    </div>
+</body>
+</html>
