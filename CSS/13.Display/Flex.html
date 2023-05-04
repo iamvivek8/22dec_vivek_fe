@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        .container{
+            height: 70vh;
+            background: #000;
+            /* width: 45vh; */
+            display: flex;
+            /* flex-direction: column-reverse; */
+            flex-wrap: wrap-reverse;
+            justify-content: center; 
+            /* justify-content: end; */
+            justify-content: flex-end;
+            /* justify-content: flex-start; */
+            justify-content: space-around;
+            /* align-items: center; */
+            /* align-items: end; */
+            /* align-items: flex-start; */
+            align-items: flex-end;  
+            
+        }
+        .item{
+            height: 120px;
+            width: 120px;
+            background: yellow;
+            margin: 10px;
+        }
+        .item-1{
+            flex-grow: 2;
+        }
+        .item-3{
+            flex-shrink: 3;
+        }
+        .item-5{
+            flex-grow: 1;
+        }
+        button{
+            width: 250px;
+            display: block;
+            margin: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-1">item-1</div>
+        <div class="item item-2">item-2</div>
+        <div class="item item-3">item-3</div>
+        <div class="item item-4">item-4</div>
+        <div class="item item-5">item-5</div>
+        <!-- <button>Click</button -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        .contain{
+            height:700px;
+            width: auto;
+            position: relative;
+            background-color: transparent;
+            border: 3px solid navy;
+        }
+        .item{
+            position: absolute;
+            border: 2px solid black;
+            height: 200px;
+            width: 350px;
+        }
+        .item-1{
+            background-color: aquamarine;
+            top: 120px;
+            left: 230px;
+            z-index: 1;
+        }
+        .item-2{
+            top: 130px;
+            left: 240px;
+            background-color: blueviolet;
+        }
+        .item-3{
+            top: 140px;
+            left: 250px;
+            background-color: cornflowerblue;
+        }
+        .item-4{
+            top: 150px;
+            left: 260px;
+            z-index: 2;
+            background-color: darkcyan;
+        }
+        .item-5{
+            top: 160px;
+            left: 270px;
+            background-color: lightslategray;
+        }
+    </style>
+</head>
+<body>
+    <div class="contain">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+    </div>
+</body>
+</html>

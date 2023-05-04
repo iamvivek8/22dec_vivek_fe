@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .main{
+            height: 1000px;
+            width: auto;
+            margin: 0;
+            padding: 0;
+            background: lightskyblue;
+        }
+        .static{
+            background: lightpink;
+            width: 70%;
+            position: static;
+            top: 50px;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="static">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime ullam
+        mollitia recusandae dolorum, earum numquam vitae? Excepturi, libero.
+      </div>
+      <div class="fixed">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque quaerat
+        inventore doloribus error beatae. Optio harum nemo maxime!
+      </div>
+      <div class="sticky">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam
+        reiciendis, quos quaerat expedita ratione ipsam cum ducimus mollitia.
+      </div>
+      <div class="container perent">
+        <div class="item child">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
+          nesciunt iste optio repudiandae quo atque sunt cupiditate doloribus.
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

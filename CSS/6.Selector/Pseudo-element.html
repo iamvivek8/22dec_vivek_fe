@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E</title>
+    <style>
+        p{
+            color: blueviolet;
+        }
+        p::after{
+            content: '';
+            color: brown;
+            border: 8px solid seagreen;
+        }
+        p::before{
+            content: '';
+            color: cornflowerblue;
+            border: 8px solid lightseagreen;
+        }
+        p::first-line{
+            color: crimson;
+        }
+        p::first-letter{
+            font-size: 50px;
+        }
+        ::selection{
+            color: aqua;
+            background: lightslategray;
+        }
+        h1::selection{
+            background: rosybrown;
+            color: darkred;
+        }
+        li{
+            color: chocolate;
+        }
+        ::marker{
+            color: lightsalmon;
+        }
+    </style>
+  </head>
+  <body>
+    <p class="p1">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt rerum
+      fugiat saepe optio. Hic molestias earum voluptatem doloribus nesciunt
+      beatae?
+    </p>
+    <p class="p2">
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus velit
+      praesentium totam ab, dolore quia? Cupiditate impedit perspiciatis numquam
+      dolores!
+    </p>
+    <h1>this is heading</h1>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+  </body>
+</html>
