@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        a{
+            text-decoration: none;
+            display: inline-block;
+            color: whitesmoke;
+            padding: 20px 50px;
+            font-size: 30px;
+            font-family: sans-serif;
+        }
+        li{
+            display: inline-block;
+        }
+        ul{
+            background: lightskyblue;
+            list-style: none;
+        }
+        ul li{
+            display: inline-block;
+        }
+        ul li .v2{
+            color: blueviolet;
+            font-weight: bolder;
+            display: inline-block;
+            position: relative;
+            padding: 20px 30px;
+            text-decoration: none;
+        }
+        .v2:hover{
+            color: burlywood;
+            background: lightslategray;
+        }
+        #pro{
+            display: none;
+            position: absolute;
+            box-shadow: 2px 2px 2px #abc, -2px 2px 2px #abc;
+            border-radius: 8px;
+
+        }
+        #pro a{
+            display: block;
+            font-weight: lighter;
+            color: darkolivegreen;
+            text-decoration: none;
+
+
+        }
+        #pro a:hover{
+            color: midnightblue;
+            background: lightslategray;
+            border-radius: 8px;
+
+        }
+        #dropdown:hover #pro{
+            display: block;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a href="" class="v2">Home</a></li>
+            <li><a href="" class="v2">About</a></li>
+            <li id="dropdown">
+                <a href="" class="v2">Service</a>
+            <div id="pro">
+                <a href="#">Link-1</a>
+                <a href="#">Link-2</a>
+                <a href="#">Link-3</a>
+                <a href="#">Link-4</a>
+                <a href="#">Link-5</a>
+            </div></li>
+            <li><a href="" class="v2">Contact</a></li>
+        </ul>
+    </div>
+</body>
+</html>

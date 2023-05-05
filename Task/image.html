@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>image-hover</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        .one{
+            width: 50%;
+            height: 300px;
+            margin: 100px auto;
+            border: 2px solid red;
+            overflow: hidden;
+            position: relative;
+        }
+        img{
+            width: 110%;
+            height: 100%;
+            transition: 1s;
+            position: absolute;
+            left: -20px;
+        }
+        img:hover{
+            /* width: 100%; */
+            left: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+    <img src="/2.Image/usgs-hoS3dzgpHzw-unsplash.jpg" alt="">
+     
+    </div>
+</body>
+</html>

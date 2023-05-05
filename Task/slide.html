@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+    <link rel="stylesheet" href="slide1.css">
+    <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#slide').cycle("zoom, fade");
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div id="menu">
+            <div id="title">
+                <h1>Online Exam</h1>
+            </div>
+            <div id="nav">
+                <ul>
+                    <li><a href="#" class="active">HOME</a></li>
+                    <li><a href="#">REGISTRATION</a></li>
+                    <li><a href="#">QUIZ</a></li>
+                    <li><a href="#">FEEDBACK</a></li>
+                    <li><a href="#">LOG OUT</a></li>
+                </ul>
+            </div>
+        </div>    
+</header>
+    <content>
+        <div id="slide">
+           <img src="/field-minion-.webp" alt="">
+           <img src="/minion-as-john-wick-.webp" alt="">
+           <img src="/minions.jpg" alt="">
+        </div>
+        <div id="form">
+            <form action="#">
+                <h1>Login</h1>
+                <input type="text" placeholder="User Name" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" value="Login">Login</button>
+                <p>Create New account?</p><a href="Register.html">Registration Here</a>
+            </form>
+        </div>
+    </content>
+    <footer>
+        <h1>Footer</h1>
+    </footer>
+</body>
+</html>
