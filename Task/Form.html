@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login-Form</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 40px;
+        font-style: italic;
+        color: moccasin;
+        text-decoration: underline;
+      }
+      div {
+        display: grid;
+        margin: 15px;
+        justify-content: center;
+      }
+      fieldset {
+        background-color: cornflowerblue;
+        display: flex;
+        justify-content: center;
+        border-radius: 10px;
+        border: none;
+      }
+      label {
+        font-size: 20px;
+      }
+      input {
+        margin-top: 5px;
+        width: 190px;
+        height: 30px;
+        border-radius: 4px;
+      }
+      button {
+        width: 80px;
+        height: 30px;
+        font-size: 18px;
+        position: relative;
+        left: 110px;
+        border-radius: 5px;
+        align-items: center;
+      }
+      button:hover {
+        color: cornflowerblue;
+        background-color: rgb(21, 71, 71);
+        border: none;
+        border-radius: 5px;
+        transition: 1s;
+      }
+      hr {
+        width: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="form">
+      <fieldset style="width: 400px">
+        <form action="" autocomplete="off">
+          <h1>User-Login</h1>
+          <div id="fn">
+            <label for="">First Name</label>
+            <input type="text" placeholder="Enter Your First Name"  minlength="5" maxlength="6" required />
+          </div>
+          <div id="ln">
+            <label for="">Last Name</label>
+            <input type="text" placeholder="Enter Your Last Name"  maxlength="6" required />
+          </div>
+          <div id="un">
+            <label for="">UserName</label>
+            <input
+              type="text"
+              placeholder="Entre Your UserName"
+              minlength="4"
+              maxlength="8"
+              required
+            />
+          </div>
+          <div id="pass">
+            <label for="">Password</label>
+            <input
+              type="password"
+              name=""
+              id=""
+              placeholder="Enter Your Password"
+              required
+            />
+          </div>
+          <div id="Email">
+            <label for="">Email</label>
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="Enter Your Email"
+              required
+            />
+          </div>
+          <div id="Mobile">
+            <label for="">Mobile Number</label>
+            <input
+              type="tel"
+              name=""
+              id=""
+              placeholder="Enter Your PhoneNumber"
+              minlength="10"
+              maxlength="10"
+              required
+            />
+          </div>
+          <hr />
+          <button type="submit">Submit</button>
+        </form>
+      </fieldset>
+    </div>
+  </body>
+</html>

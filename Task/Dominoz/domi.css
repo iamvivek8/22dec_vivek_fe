@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+nav{
+    background-color: blue;
+    /* padding: 5px 8px; */
+    height: 48px;
+}
+#account{
+    color: white;
+}
+nav #nav{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 18px;
+    position: relative;
+}
+content #main{
+    width: 66%;
+    /* height: 39px; */
+    margin-top: 30px;
+    /* margin-left: auto; */
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid red; */
+}
+#box-1{
+    /* height: 30px; */
+}
+#logo img{
+    position: relative;
+    top: 49px;
+    left: 99px;
+    height: 50px;
+    width: 100%;
+}
+p{
+    font-size: 29px;
+    position: relative;
+    top: 60px;
+    left: 80px;
+}
