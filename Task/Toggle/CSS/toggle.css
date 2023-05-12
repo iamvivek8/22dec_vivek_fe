@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.bar1{
+    background-color: rgb(59, 127, 129);
+    display: flex;
+    justify-content: flex-end;
+ }
+ ul li{
+    list-style: none;
+    display: inline-block;
+ }
+ li a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px 20px;
+    font-size: 30px;
+    color: darksalmon;
+ }
+ .bar1 i{
+    display: none;
+    font-size: 30px;
+ }
