@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="CSS/map.css">
+  </head>
+  <body>
+    <section class="main">
+      <div>
+        <h1>Contacet us</h1>
+      </div>
+      <hr />
+      <div class="add">
+        ADDRESS: <br />
+        Saint MArco Street, 6th <br />
+        floor,Tokyo,Japan,123456.
+        <div class="con">
+          <a class="mo" href="#">+911234567890</a><br />
+          <a class="em" href="#">example@gmail.com</a>
+        </div>
+        <i class="fa-solid fa-location-dot"></i>
+        <i id="phone" class="fa-solid fa-square-phone"></i>
+        <i id="email" class="fa-solid fa-envelope"></i>
+      </div>
+      <div class="contact">
+        <form action="">
+          <input type="text" placeholder="Name:"  minlength="3" maxlength="6"/>
+          <input type="text" name="" id="" placeholder="Company:" />
+          <input type="email" name="" id="" placeholder="Email:" required />
+          <input type="tel" name="" id="" placeholder="Mobile:" pattern="[1-9]{1}[0-9]{9}" maxlength="10" required/>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder=" Your Message:"
+          ></textarea>
+          <button>Send</button>
+        </form>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92903.17582229894!2d69.99162725006857!3d22.472960941768513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3957154934c04597%3A0xe8b7dd81a49b75ca!2sJamnagar%2C%20Gujarat!5e0!3m2!1sen!2sin!4v1685212656025!5m2!1sen!2sin"
+            width="280px"
+            height="360px"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+          <div class="faicon">
+          <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook" style="color: #2559b1;"></i></a>
+          <a href="https://twitter.com/?lang=en-in"><i class="fa-brands fa-twitter" style="color: #1DA1F2;"></i></a>
+          <a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin" style="color:#0e76a8;"></i>
+          <a href="https://github.com/"><i class="fa-brands fa-square-github" style="color: #211f1f;"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

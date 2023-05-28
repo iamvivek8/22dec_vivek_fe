@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&family=Rubik+Wet+Paint&family=Ubuntu:wght@300&display=swap');
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: 'Ubuntu', sans-serif;
+
+            }
+            .main {
+              background-color: powderblue;
+              width: 860px;
+              height:653px;
+              margin: 30px auto;
+            }
+            h1 {
+              font-size: 38px;
+              margin-left: 50px;
+            }
+            .add {
+              margin-top: 10px;
+              background-color: white;
+              width: 800px;
+              display: flex;
+              margin-left: 30px;
+              padding: 10px 20px;
+            }
+            .con {
+              position: relative;
+              top: 20px;
+              left: 60px;
+            }
+            a {
+              text-decoration: none;
+            }
+            a.mo {
+              color: red;
+            }
+            a.em {
+              color: #38a9ba;
+            }
+            i{
+              color: red;
+              position: relative;
+              left: 220px;
+              top: 14px;
+              font-size: 30px;
+            }
+            #phone{
+              position: relative;
+              left: -134px;
+              top: 16px;
+              font-size: 20px;
+            }
+            #email{
+              position: relative;
+              left: -154px;
+              top: 39px;
+              font-size: 20px;
+              color: #38a9ba;
+            }
+            .contact{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              position: relative;
+              left: 30px;
+              background-color: white;
+              top: 30px;
+              width: 93%;
+              height: 68%;
+            }
+            input{
+              position: relative;
+              top: -60px;
+              margin: 10px;
+              left: 20px;
+              height: 30px;
+              width: 220px;
+              padding: 12px;
+            }
+            textarea{
+              position: relative;
+              top: -40px;
+              left: 30px;
+              width: 460px;
+              padding: 13px;
+            }
+            button{
+              position: absolute;
+              bottom: 48px;
+              left: 30px;
+              height: 40px;
+              width: 80px;
+              border-radius: 8px;
+              border: none;
+              background-color: red;
+            }
+            .map{
+              position: relative;
+              top: 8px;
+              right: 15px;
+            }
+            .faicon{
+              position: relative;
+              right: 217px;
+              top: -8px;
+            }
