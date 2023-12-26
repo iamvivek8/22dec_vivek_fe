@@ -1,0 +1,48 @@
+/* Q10 */
+
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+}
+/* Q7 */
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-thumbnail img{
+    width: 350px;
+    height: 210px;
+    object-fit: cover;
+}
+
+/* Q6 */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/* Q5 */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  /* Q2 */
+  .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .container{
+    background-color: turquoise;
+  }
+  .container-fluid{
+    background-color: violet;
+  }
