@@ -1,0 +1,18 @@
+#main{
+    width: 20%;
+    margin: 30px auto;
+    padding: 28px;
+    border-radius: 12px;
+    background-color: rgb(158, 191, 253);
+    color: #f2f2f2c4;
+}
+#item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+#item1{
+    display: flex;
+    justify-content: center;
+}

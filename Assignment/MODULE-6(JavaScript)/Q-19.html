@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Q-19Create basic math operation in Js</h1>
+    <p>Ans:-</p>
+    <div class="main">
+        <h2>Math Operation</h2>
+        <div class="item">
+            <label for="">Enter 1st Number</label>
+            <input type="text" name="" id="num1" value="10">
+        </div>
+        <div class="item">
+            <label for="">Enter 2st Number</label>
+            <input type="text" name="" id="num2" value="20">
+        </div>
+        <div id="opr">
+            <div id="sign">
+                <button type="submit" class="btn" value="+">+</button>
+                <button type="submit" class="btn" value="-">-</button>
+                <button type="submit" class="btn" value="*">*</button>
+                <button type="submit" class="btn" value="/">/</button>
+                <button type="submit" class="btn" value="%">%</button>
+            </div>
+            <p>Ans is : <span id="span">30</span></p>
+        </div>
+    </div>
+    <script>
+        let num1 = document.querySelector('#num1');
+        let num2 = document.querySelector('#num2');
+        let btn = document.querySelectorAll('.btn');
+        let span =document.querySelector('#span')
+            btn.forEach((btn)=>{
+                btn.addEventLister('click',function(){
+                    symbol(btn.values);
+                })
+            })
+
+            function symbol(key){
+                if(key == "+"){
+                    span.innerHTMl = +num1.value + +num2.value;
+                }else if (key == "-"){
+                    span.innerHTMl = num1.value - num2.value;
+                }else if (key =="*"){
+                    span.innerHTMl = num1.value * num2.value;
+                }else if(key  == "/"){
+                    let ans = num1.value / num2.value;
+                    span.innerHTMl =ans.toFixed(2);
+                }else{
+                    span.innerHTMl = num1.value % num2.value;
+                }
+            }
+    </script>
+</body>
+</html>
