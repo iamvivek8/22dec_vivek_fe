@@ -1,0 +1,41 @@
+.lists-container
+    {
+        background-color: bisque;
+        max-width: 400px;
+        height: auto;
+        text-align: center;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 22px;
+        margin: auto;
+        margin-top: 100px;
+        padding: 30px;
+    }
+    h2{
+        font-size: 30px;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        color: #4D4D4D;
+    }
+
+    ul {
+        list-style: none;
+        /* border: 2PX solid #4D4D4D; */
+        max-width: 190px;
+        margin: auto;
+        text-align: center;
+    }
+    button{
+        background: none;
+        border: none;
+        border: 3px solid #4D4D4D;
+        border-radius: 3px;
+        padding: 10px 22px;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        color: black;
+        font-weight: bold;
+    }
