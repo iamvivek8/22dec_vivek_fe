@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Validation</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 50px;
+    }
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 20%;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+
+    button {
+      padding: 10px 80px;
+      cursor: pointer;
+      background-color: rgb(209, 77, 77);
+    }
+
+    .error {
+      color: red;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+<body>
+<h1>Q.22 write a code in javascript to apply validations of following form</h1>
+<p><b>Ans.</b></p>
+  <form id="myForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter Your Name"> 
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter Your Email">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter Your Password ">
+<br>
+    <button type="button" onclick="validateForm()">Submit</button>
+
+    <div id="errorMessages" class="error"></div>
+  </form>
+
+  <script>
+    function validateForm() {
+      // Reset error messages
+      document.getElementById('errorMessages').innerHTML = '';
+
+      // Get form values
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+
+      // Perform validation
+      if (name.trim() === '') {
+        displayError('Name is required.');
+      }
+
+      if (email.trim() === '') {
+        displayError('Email is required.');
+      } else if (!isValidEmail(email)) {
+        displayError('Invalid email format.');
+      }
+
+      if (password.trim() === '') {
+        displayError('Password is required.');
+      }
+
+      if (document.getElementById('errorMessages').innerHTML === '') {
+        console.log('Form submitted successfully!');
+      }
+    }
+
+    function displayError(message) {
+      const errorMessageElement = document.getElementById('errorMessages');
+      errorMessageElement.innerHTML += `<div>${message}</div>`;
+    }
+
+    function isValidEmail(email) {
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+  </script>
+
+</body>
+</html>

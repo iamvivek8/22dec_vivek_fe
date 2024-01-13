@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Q.15 Write a JavaScript function that reverses a number.</h1>
+    <p><b>Ans</b></p>
+    <script>
+        function reverseNumber(number) {
+  const numberString = number.toString();
+
+  const reversedString = numberString.split('').reverse().join('');
+
+  const reversedNumber = parseInt(reversedString);
+
+  return reversedNumber;
+}
+
+const originalNumber = 12345;
+const reversedResult = reverseNumber(originalNumber);
+
+console.log(`Original Number: ${originalNumber}`);
+console.log(`Reversed Number: ${reversedResult}`);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Q.19 Write a JavaScript function to generate a random integer</h1>
+    <p><b>Ans.</b></p>
+    <script>
+        function getRandomInteger(min, max) {
+
+            
+  const randomInteger = Math.floor(Math.random() * (max - min + 1)) + min;
+  return randomInteger;
+}
+
+// Example usage:
+const random1 = getRandomInteger(5000, 6000);
+const random2 = getRandomInteger(6000, 7000);
+const random3 = getRandomInteger(8000, 9000);
+
+console.log(random1, random2, random3);
+
+    </script>
+</body>
+</html>

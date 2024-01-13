@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*---------- Q.2 ------------*/
+.main {
+  height: 80px;
+  background-color: peachpuff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: cornflowerblue;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.main img {
+  height: 60px;
+}
+
+.main2 img {
+  height: 69px;
+}
+
+.main2 {
+  height: 80px;
+  background-color: hotpink;
+  color: rgb(51, 60, 224);
+  font-size: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*-------- Q.3------- */
+.navbar {
+  overflow: hidden;
+  /* background-color: #333; */
+  background-color: aquamarine;
+  color: #1e0303;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: rgb(31, 5, 5);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: rgb(58, 6, 6);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  background-color: rgb(9, 148, 208);
+  border-radius: 20px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  font-size: 28px;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* --------------Q.7-------------- */
+.main7 {
+  width: 280px;
+  border: 15px solid gray;
+  padding: 40px;
+  margin: 20px;
+  background-color: beige;
+}
+
+/* --------------Q.8-------------- */
+
+.main8 {
+  background-color: rgb(24, 56, 88);
+  height: 50px;
+}
+
+/* ------------Q.9-------------- */
+.box {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+}
+
+.box1 {
+  background-color: rgb(174, 101, 101);
+  top: 50px;
+  left: 50px;
+  z-index: 1;
+}
+
+.box2 {
+  background-color: rgb(92, 92, 146);
+  top: 70px;
+  left: 70px;
+  z-index: 2;
+}
+
+.box3 {
+  background-color: rgb(64, 189, 64);
+  top: 90px;
+  left: 90px;
+  z-index: 3;
+}
+
+/* ----------------Q.10-------------- */
+:root {
+  --main-font-size: 16px;
+  --main-line-height: 1.5;
+  --container-padding: 20px;
+  --color: rgb(221, 182, 218);
+  --bgco: rgb(100, 37, 113);
+  --secondry: rgb(80, 80, 218);
+  --font: 28px;
+}
+
+.container {
+  padding: var(--container-padding);
+  height: 300px;
+  border: 2px solid black;
+}
+
+@media screen and (min-width: 600px) {
+  .container {
+    color: var(--color);
+    background-color: var(--bgco);
+
+
+  }
+
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    background-color: var(--secondry);
+    font-size: var(--font);
+
+  }
+}
+
+/* ---------Q.11-------------- */
+nav {
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  /* z-index: 1; */
+  top: 30px;
+  align-items: center;
+}
+
+nav span {
+  font-size: 32px;
+}
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: #f9f9f9;
+  font-size: 28px;
+}
+
+.main11 {
+  height: 600px;
+  border: 2px solid black;
+  object-fit: fill;
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://media.designcafe.com/wp-content/uploads/2023/01/31151510/contemporary-interior-design-ideas-for-your-home.jpg);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 150px;
+  flex-direction: column;
+}
+.main11 img {
+  object-fit: fill;
+  height: 600px;
+  width: 100%;
+}
+/* ---------------Q.13 -------------- */
+.btn{
+  padding: 12px 16px;
+  border: 2px solid black;
+  border-radius: 4px;
+font-size: 18px;
+  background-color: #f9f9f9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------Q.23------------------ */
+body {
+  font-family: Arial, sans-serif;
+}
+
+#calculator {
+  width: 300px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  width: 38%;
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px;
+  cursor: pointer;
+}

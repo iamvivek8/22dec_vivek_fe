@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      Q.14 Write a JavaScript program to calculate multiplication and division
+      of two numbers (input from the user).
+    </h1>
+    <p> <b>Ans.</b></p>
+
+
+    
+    
+    <button onclick="divideNumbers()">Divide Numbers</button>
+    <button onclick="multiplyNumbers()">Multiply Numbers</button>
+    <script>
+        function multiplyNumbers() {
+          const num1 = parseFloat(prompt("Enter the first number:"));
+          const num2 = parseFloat(prompt("Enter the second number:"));
+    
+          if (!isNaN(num1) && !isNaN(num2)) {
+            const result = num1 * num2;
+            alert(`Multiplication result: ${result}`);
+          } else {
+            alert("Invalid input. Please enter valid numbers.");
+          }
+        }
+    
+        function divideNumbers() {
+          const num1 = parseFloat(prompt("Enter the dividend:"));
+          const num2 = parseFloat(prompt("Enter the divisor:"));
+    
+          if (!isNaN(num1) && !isNaN(num2) && num2 !== 0) {
+            const result = num1 / num2;
+            alert(`Division result: ${result}`);
+          } else if (num2 === 0) {
+            alert("Cannot divide by zero. Please enter a non-zero divisor.");
+          } else {
+            alert("Invalid input. Please enter valid numbers.");
+          }
+        }
+    
+      </script>
+    
+    
+
+  </body>
+</html>

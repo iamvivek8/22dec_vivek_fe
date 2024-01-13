@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Q.18Write a JavaScript function to get the function name</h1>
+
+    <p><b>Ans.</b></p>
+    <script>
+        function getFunctionName() {
+  // Use Error stack trace to get the function name
+  const error = new Error();
+  const stack = error.stack || '';
+  const matches = stack.match(/(\w+)@|at (\w+) \(/);
+
+  if (matches && matches.length > 1) {
+    return matches[1] || matches[2] || 'Anonymous Function';
+  }
+
+  return 'Unknown Function';
+}
+
+// Example usage:
+function myFunction() {
+  const functionName = getFunctionName();
+  console.log(`The function name is: ${functionName}`);
+}
+
+myFunction();
+
+    </script>
+</body>
+</html>

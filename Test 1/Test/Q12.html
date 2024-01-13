@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>
+      Q.12 Write a JavaScript program to display the current day and time in the
+      following format. Sample Output : Today is : Tuesday.
+    </h1>
+    <script>
+
+         const currentDate = new Date();
+         const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+         const currentDayIndex = currentDate.getDay();
+         const currentDay = daysOfWeek[currentDayIndex];
+         const currentTime = currentDate.toLocaleTimeString();
+
+         console.log
+    
+             document.write(`Today is: ${currentDay}. Current time is: ${currentTime}`);
+        
+    </script>
+  </body>
+</html>

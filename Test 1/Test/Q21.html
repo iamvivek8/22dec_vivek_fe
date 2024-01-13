@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Q.21 Write a JavaScript function to find the lowest value in an array.</h1>
+    
+<script>
+    function findLowestValue(arr) {
+        if (arr.length === 0) {
+          return undefined; 
+        }
+      
+        let minValue = arr[0];
+        
+        // Iterate through the array to find the minimum value
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] < minValue) {
+            minValue = arr[i];
+          }
+        }
+      
+        return minValue;
+      }
+      
+      // Example usage:
+      const numbers = [12, 34, 56, 1];
+      const lowestValue = findLowestValue(numbers);
+      
+      console.log(`The lowest value in the array is: ${lowestValue}`);
+
+      </script>
+      
+    </body>
+    </html>
